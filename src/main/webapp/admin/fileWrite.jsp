@@ -103,6 +103,12 @@
 			<textarea name ="content" id="content" style ="width:98%; height:150px;"></textarea>
 			</td>
 		</tr>
+		<tr>
+			<th>파일</th>
+			<td>
+			<textarea name ="file" id="file1" id ="file1" style ="width:98%; height:150px;"></textarea>
+			</td>
+		</tr>
 	</table>
 	
 	<div style ="width:600px; text-align:center; margin-top:10px;">
