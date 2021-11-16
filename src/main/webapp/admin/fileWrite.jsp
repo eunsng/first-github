@@ -33,7 +33,7 @@
 			  var formdata = $("#frm").serialize();
 			  $.ajax({
 				  type : "POST",
-				  url  : "admin_nboardWriteSave.do",
+				  url  : "fileboardWriteSave.do",
 				  data : formdata,
 				  
 				  datatype : "text",
@@ -72,12 +72,12 @@
 		</div>
 
 		<div style="position:relative; left:20px; top:30px; margin-bottom:5px;">
-			<span style ="font-size :20px; font-family:'맑은 고딕'; font-weight:bold; ">공지사항 등록 화면</span>
+			<span style ="font-size :20px; font-family:'맑은 고딕'; font-weight:bold; ">자료 게시판 등록</span>
 		</div>
 
 		<div style="position:relative; left:20px; top:30px;">
 	
-<form id ="frm">
+<form id ="frm" enctype = "multipart/form-data">
 	<table style ="width:600px;">
 		<tr>
 			<th>제목</th>
@@ -106,7 +106,7 @@
 		<tr>
 			<th>파일</th>
 			<td>
-			<textarea name ="file" id="file1" id ="file1" style ="width:98%; height:150px;"></textarea>
+			<input type ="file" name="file1" id ="file1" style ="width:50%;">
 			</td>
 		</tr>
 	</table>
